@@ -1,3 +1,20 @@
+/*************************************************************************
+ *
+ *  Pace University
+ *
+ *  Course: CS 361 Programming Language & Implementation
+ *  Author: ANGELA FONG & JACKIE SHAO
+ *  Collaborators: NONE
+ *  References: NONE
+ *
+ *  Assignment: 2
+ *  Problem: MergeSort
+ *  Description: Write a recursive function merge that merges 2 arrays in Java. The function will have the following profile:
+ *  public static void mergeSort(int[] a)
+ *
+ *
+ *************************************************************************/ 
+
 public class MergeSort 
 {
 	// Merges two sub-arrays 
