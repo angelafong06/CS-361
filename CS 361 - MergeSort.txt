@@ -1,0 +1,122 @@
+public class MergeSort 
+{
+	// Merges two sub-arrays 
+	// First subarray is a[l..mid] 
+	// Second subarray is a[m+1..r] 
+
+
+	public static void mergeSort(int [] a, int x, int mid, int y) 
+	{ 
+		// Initialize temp variables to hold the sizes of two sub-arrays to be merged 
+		int left = mid - x + 1; 
+		int right = y - mid; 
+
+		// Create temporary arrays with the sizes initialized above
+		int L[] = new int [left]; 
+		int R[] = new int [right]; 
+
+		// Copy the array's data over to temp arrays
+		for (int i = 0; i < left; i++) 
+		{
+			// Copy all the data from index 0 to mid + 1
+			L[i] = a[x + i]; 
+		}
+		for (int j = 0; j < right; j++) 
+		{
+			// Copy all the data from index mid + 1 to end index
+			R[j] = a[mid + 1 + j]; 
+		}
+
+		// Initial indexes of first and second sub-arrays 
+		int i = 0;
+		int j = 0; 
+
+		// Initial index of merged subarry 
+		int k = x; 
+
+		while (i < left && j < right) 
+		{ 
+			if (L[i] <= R[j]) 
+			{ 
+				a[k] = L[i]; 
+				i++; 
+			} 
+			else
+			{ 
+				a[k] = R[j]; 
+				j++; 
+			} 
+			k++; 
+		} 
+
+		// Add remaining elements of L[] to array
+		while (i < left) 
+		{ 
+			a[k] = L[i]; 
+			i++; 
+			k++; 
+		} 
+
+		// Add remaining elements of R[] to array
+		while (j < right) 
+		{ 
+			a[k] = R[j]; 
+			j++; 
+			k++; 
+		} 
+	} 
+
+	// Method that sorts a[l..y] using mergeSort & keeps it more organized
+	public static void sort(int [] a, int x, int y) 
+	{ 
+		// int a[] = array that you are sorting
+		// int x = starting index
+		// int y = ending index
+
+		if (x < y) 
+		{ 
+			// Find the middle point, mid = (x + y)/2
+			int mid = (x + y)/2; 
+
+			// Sort first half of the array from index 0 to midpoint
+			sort(a, x, mid);
+
+			// Sort the second half of the array from midpoint + 1 to ending index
+			sort(a, mid + 1, y); 
+
+			// Merge the sorted halves 
+			mergeSort(a, x, mid, y); 
+		} 
+	} 
+
+	// Prints the entire array
+	public static void printArray(int [] a) 
+	{ 
+		// Use a for method to print all the numbers in the array
+		for (int i = 0; i < a.length; i++) 
+		{
+			System.out.print(a[i] + " "); 
+		}
+	} 
+
+	// Tester method 
+	public static void main(String args[]) 
+	{ 
+		// Initialize an array with a bunch of random numbers
+		int a[] = {23, 45, 89, 5, 12, 9, 10, 3, 20, 17, 33, 40, 2, 35}; 
+
+		// Print the array before sorting for comparison
+		System.out.println("Original Array: "); 
+		printArray(a); 
+		System.out.println();
+
+		// Create a new sort to sort above array
+		MergeSort newSort = new MergeSort(); 
+		newSort.sort(arr, 0, a.length-1); 
+
+		// Print the array after sorting is completed
+		System.out.println("\nSorted Array: "); 
+		printArray(a); 
+	} 
+
+}
