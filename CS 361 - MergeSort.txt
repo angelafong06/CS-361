@@ -7,7 +7,7 @@
  *  Collaborators: NONE
  *  References: NONE
  *
- *  Assignment: 2
+ *  Assignment: 2 (10/07/18)
  *  Problem: MergeSort
  *  Description: Write a recursive function merge that merges 2 arrays in Java. The function will have the following profile:
  *  public static void mergeSort(int[] a)
