@@ -1,4 +1,19 @@
-	
+/*************************************************************************
+ *
+ *  Pace University
+ *
+ *  Course: CS 361 Programming Language & Implementation
+ *  Author: ANGELA FONG & JACKIE SHAO
+ *  Collaborators: NONE
+ *  References: NONE
+ *
+ *  Assignment: 2 (10/07/18)
+ *  Problem: Tail Recursion Factorial
+ *  Description: 
+ *
+ *
+ *************************************************************************/ 
+ 
 public class TailRecursFact 
 {
 	public static int tailFact (int n, int x)
