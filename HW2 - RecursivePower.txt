@@ -9,7 +9,7 @@
  *
  *  Assignment: 2 (10/07/18)
  *  Problem: Recursive Power
- *  Description: Write a recursive function recPowthat computes 2n for n >= 0 in Java. The function will have the following profile:
+ *  Description: Write a recursive function recPow that computes 2n for n >= 0 in Java. The function will have the following profile:
  *  public static int recPow(int n)
  *
  *
