@@ -8,7 +8,7 @@
  *  References: NONE
  *
  *  Assignment: 2 (10/07/18)
- *  Problem: Factorial
+ *  Problem: Sum
  *  Description: 
  *
  *
