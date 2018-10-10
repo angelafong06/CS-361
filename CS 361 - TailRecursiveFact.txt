@@ -1,0 +1,9 @@
+	
+public class TailRecursFact 
+{
+	public static int tailFact (int n, int x)
+	{
+		if (n == 0)
+			return x;
+		else return tailFact(n-1, n*x);
+	}
