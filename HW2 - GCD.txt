@@ -1,3 +1,19 @@
+/*************************************************************************
+ *
+ *  Pace University
+ *
+ *  Course: CS 361 Programming Language & Implementation
+ *  Author: ANGELA FONG & JACKIE SHAO
+ *  Collaborators: NONE
+ *  References: NONE
+ *
+ *  Assignment: 2 (10/07/18)
+ *  Problem: GCD
+ *  Description: 
+ *
+ *
+ *************************************************************************/ 
+ 
 public class GCD 
 {	public static int gcd(int m, int n)
 	{	if (m == n)
